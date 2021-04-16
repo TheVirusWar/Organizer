@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="Organizer.Views.FileOrganizer_View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Organizer.Views"
+             mc:Ignorable="d" Width="634" Height="419">
+    <Grid Background="White">
+        <Button Name="ButtonPath" Content="Path" HorizontalAlignment="Left" Margin="535,25,0,0" VerticalAlignment="Top" Height="18" Width="44" Click="ButtonPath_Clicked"/>
+        <TextBox Name="TextBoxPath" HorizontalAlignment="Left" Margin="27,25,0,0" Text="..." TextWrapping="Wrap" VerticalAlignment="Top" Width="508"/>
+        <TextBox Name="TextBoxFiles" IsReadOnly="True" HorizontalAlignment="Left" Height="295" Margin="27,97,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="229"/>
+        <Label FontSize="15" Name="LabelWarning" Content="" HorizontalAlignment="Left" Margin="271,105,0,0" VerticalAlignment="Top"/>
+        <Button Name="ButtonRename" Content="Rename" HorizontalAlignment="Left" Margin="381,364,0,0" VerticalAlignment="Top" Width="108" Height="28" Click="ButtonRename_Clicked" Visibility="Hidden"/>
+    </Grid>
+</UserControl>
